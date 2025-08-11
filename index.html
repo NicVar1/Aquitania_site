@@ -1,45 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
-  <title>MUNICIPIO: DEVOPS USTA Tunja</title>
+  <title>Aquitania: La capital de la trucha</title>
+
+  <!-- Fuente moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f4f8fb;
+      color: #333;
+      line-height: 1.6;
+      padding-top: 60px; /* espacio para que no tape el nav fijo */
+    }
+
+    /* Barra de navegación */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: linear-gradient(135deg, #3c8dbc, #56c6d6);
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem 1rem;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #3c8dbc;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    figure {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    figure img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    figcaption {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+
+    section h2 {
+      color: #3c8dbc;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: #3c8dbc;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    footer h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    footer ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Barra de navegación -->
+  <nav>
+    <ul>
+      <li><a href="pages/history.html">Historia</a></li>
+      <li><a href="pages/gastronomy.html">Gastronomía</a></li>
+      <li><a href="pages/tourism.html">Turismo</a></li>
+      <li><a href="pages/festivities.html">Festividades</a></li>
+    </ul>
+  </nav>
+
   <header>
-    <h1>Aquitania la capital de la trucha</h1>
+    <h1>Aquitania: La capital de la trucha</h1>
   </header>
 
   <main>
     <figure>
-      <img src="./assets/img/main.jpg">
-      <figcaption>Paisaje representativo de MUNICIPIO</figcaption>
+      <img src="./assets/img/main.jpg" alt="Paisaje representativo de Aquitania">
+      <figcaption>Paisaje representativo de Aquitania</figcaption>
     </figure>
 
     <section>
-      <h2>Intróducción</h2>
+      <h2>Introducción</h2>
       <p>
-        MUNICIPIO es uno de los tesoros de Boyacá, conocido por su rica historia, paisajes encantadores y tradiciones que perduran. En este sitio encontrarás una mirada detallada sobre su legado, sabores, atractivos turísticos y celebraciones únicas.
+        Aquitania es un municipio emblemático de Boyacá, famoso por su producción de trucha y su riqueza natural.
       </p>
     </section>
-
-    <nav>
-      <h3>Explora más sobre MUNICIPIO:</h3>
-      <ul>
-        <li><a href="pages/history.html">Historia</a></li>
-        <li><a href="pages/gastronomy.html">Gastronomia</a></li>
-        <li><a href="pages/tourism.html">Turismo</a></li>
-        <li><a href="pages/festivities.html">Festividades</a></li>
-      </ul>
-    </nav>
   </main>
+
   <footer>
     <h3>Desarrolladores</h3>
     <ul>
       <li>Andrés Gómez Gutiérrez</li>
       <li>Willton Higuera Coronado</li>
-      <li>Nicolas Otero Vargas</li>
+      <li>Nicolás Otero Vargas</li>
     </ul>
   </footer>
 </body>
