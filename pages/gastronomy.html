@@ -1,123 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gastronomía de Aquitania - Boyacá</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #fff8f0;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      position: relative;
-      text-align: center;
-      color: white;
-    }
-    header img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      filter: brightness(70%);
-    }
-    header h1 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 2.5rem;
-      background: rgba(0, 0, 0, 0.4);
-      padding: 10px 20px;
-      border-radius: 8px;
-    }
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    section {
-      margin-bottom: 40px;
-      padding: 20px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #a0522d;
-      border-bottom: 2px solid #f4a460;
-      padding-bottom: 5px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li {
-      background: #fff3e0;
-      margin: 8px 0;
-      padding: 10px;
-      border-left: 5px solid #f4a460;
-      transition: background 0.3s;
-    }
-    ul li:hover {
-      background: #ffe0b2;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background-color: #a0522d;
-      color: white;
-    }
-    footer a {
-      color: #fffacd;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="https://colombiaartesanal.com.co/wp-content/uploads/cocina-gastronomia-boyaca.jpg" alt="Gastronomía de Boyacá">
-    <h1>Sabores auténticos de Aquitania, Boyacá</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Gastronomía de Aquitania - Boyacá</title>
 
-  <main>
-    <section>
-      <h2>Platos tradicionales</h2>
-      <ul>
-        <li><strong>Cocido boyacense</strong> – mezcla de carnes, tubérculos y verduras, cocinados a fuego lento.</li>
-        <li><strong>Arepas de maíz pelao</strong> – con textura suave y sabor inconfundible.</li>
-        <li><strong>Mazamorra chiquita</strong> – sopa espesa hecha con maíz, papas y hierbas.</li>
-        <li><strong>Chicha fermentada</strong> – bebida ancestral hecha a base de maíz.</li>
-      </ul>
-    </section>
+  </head>
+  <body>
+    <div class="navbar-container">
+      <nav class="navbar">
+        <ul>
+          <li><a href="pages/history.html">Historia</a></li>
+          <li><a href="./gastronomy.html">Gastronomía</a></li>
+          <li><a href="pages/tourism.html">Turismo</a></li>
+          <li><a href="./festivities.html">Festividades</a></li>
+        </ul>
+      </nav>
+    </div>
 
-    <section>
-      <h2>Ingredientes locales</h2>
+    <header>
+      <img
+        src="https://colombiaartesanal.com.co/wp-content/uploads/cocina-gastronomia-boyaca.jpg"
+        alt="Gastronomía de Boyacá"
+      />
+      <h1>Sabores auténticos de Aquitania, Boyacá</h1>
+    </header>
+
+    <main>
+      <section class="card">
+        <img src="/img/plato-tipico.jpg" alt="Platos típicos de Aquitania" />
+        <div>
+          <h2>Platos tradicionales</h2>
+          <ul>
+            <li>
+              <strong>Trucha arcoíris</strong> – preparada de múltiples maneras:
+              frita, al ajillo, en salsa o rellena, es el emblema culinario de
+              Aquitania.
+            </li>
+            <li>
+              <strong>Cocido boyacense</strong> – guiso cargado de tubérculos
+              andinos y carne, una cálida tradición para el clima frío.
+            </li>
+            <li>
+              <strong>Mazamorra chiquita</strong> – postre o sopa cocida por
+              horas con maíz, callo, acelgas, carne y frijoles.
+            </li>
+            <li>
+              <strong>Jute de papa</strong> – curioso fermentado de papa, con
+              raíces ancestrales en la región.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <img src="/img/cultivos-agricolas.webp" alt="Ingredientes locales" />
+        <div>
+          <h2>Ingredientes locales</h2>
+          <p>
+            La gastronomía de Aquitania se nutre de los generosos recursos
+            agrícolas que ofrecen sus tierras fértiles, bañadas por el clima
+            frío y húmedo de la región. Entre los ingredientes más emblemáticos
+            se encuentran las papas criollas, cultivadas en laderas andinas que
+            realzan su sabor y textura; el maíz, base de múltiples preparaciones
+            tradicionales; y las habas frescas, que aportan color y nutrientes.
+            La carne de res, proveniente de ganaderías locales, se combina con
+            cebolla larga, zanahoria y otros tubérculos como la arracacha y el
+            cubio, creando platos de alto valor nutritivo y profundo arraigo
+            cultural.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div>
+          <h2>Sabores y técnicas</h2>
+          <p>
+            Los sabores de Aquitania son el resultado de técnicas transmitidas
+            de generación en generación. La cocción lenta en fogones de leña
+            permite que los ingredientes liberen sus aromas y se impregnen de un
+            sabor ahumado característico. El horneado artesanal, realizado en
+            hornos de barro, realza la textura y jugosidad de panes y
+            preparaciones saladas. Además, prácticas como la fermentación
+            natural no solo conservan los alimentos, sino que intensifican su
+            perfil gustativo, dando lugar a quesos, bebidas y encurtidos únicos
+            en la región.
+          </p>
+        </div>
+        <img src="/img/cocina-tradicional.jpg" alt="Ingredientes locales" />
+      </section>
+
+      <section class="card">
+        <div>
+          <h2>Festivales gastronómicos</h2>
+          <p>
+            Cada año, Aquitania se convierte en un epicentro culinario durante
+            sus ferias y festivales gastronómicos, donde campesinos, cocineros y
+            artesanos presentan lo mejor de la cocina local. Entre los
+            protagonistas destacan las sopas espesas como el cuchuco, las arepas
+            de maíz pelado, los envueltos y el tradicional caldo boyacense,
+            acompañado de ají casero. También se celebran las bebidas autóctonas
+            como la chicha de maíz y dulces elaborados con leche, panela y
+            frutas de la región. Estos eventos no solo son una oportunidad para
+            degustar, sino también para preservar y promover la herencia
+            culinaria que identifica a Aquitania ante el resto del país.
+          </p>
+        </div>
+        <img src="/img/festival-gastronomico.jpg" alt="Ingredientes locales" />
+      </section>
+    </main>
+
+    <footer>
       <p>
-        Papas criollas, maíz, habas, carne de res, cebolla larga y tubérculos cultivados en los fértiles suelos de la región.
+        © 2025 Aquitania Web | Créditos: Andrés Gómez Gutiérrez, Willton Higuera
+        Coronado, Nicolás Otero Vargas
       </p>
-    </section>
-
-    <section>
-      <h2>Sabores y técnicas</h2>
-      <p>
-        Cocción lenta en leña, horneado artesanal y fermentación natural que aportan una profundidad única a cada bocado.
-      </p>
-    </section>
-
-    <section>
-      <h2>Festivales gastronómicos</h2>
-      <p>
-        Aquitania celebra cada año ferias culinarias donde se exhiben recetas típicas, bebidas autóctonas y dulces que cautivan a locales y turistas.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <a href="../index.html">← Regresar</a>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
