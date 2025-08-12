@@ -1,44 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
-  <title>Turismo de MUNICIPIO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <title>Turismo en Aquitania - Boyacá</title>
 </head>
 <body>
-  <img src="https://www.viajescomfama.com/portals/1139/Images/boyaca/viajescomfama-boyaca-01.jpg">
+  <!-- NAVBAR LATERAL -->
+  <div class="navbar-container">
+    <nav class="navbar">
+      <ul>
+        <li><a href="history.html">Historia</a></li>
+        <li><a href="gastronomy.html">Gastronomía</a></li>
+        <li><a href="tourism.html" class="active">Turismo</a></li>
+        <li><a href="festivities.html">Festividades</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <img src="/img/atardecer-aquitania.jpg" alt="Turismo en Aquitania">
+    <h1>Descubre Aquitania, Boyacá</h1>
+  </header>
 
   <main>
+    <!-- CAROUSEL PRINCIPAL -->
+    <section aria-label="Galería principal">
+      <div class="carousel" id="carousel">
+        <div class="slides" id="slides">
+          <!-- imágenes con URLs estables (Wikimedia Commons) -->
+        <img loading="lazy" src="/img/laguna-de-tota.jpg" alt="Lago de Tota">
+        <img loading="lazy" src="/img/Aquitania_iglesia.jpg" alt="Iglesia de Aquitania">
+        <img loading="lazy" src="/img/monte-tabor.jpg" alt="Centro histórico">
+        <img loading="lazy" src="/img/Playa_Blanca.jpg" alt="Playa Blanca">
+        </div>
 
-    <section>
-      <h2>Lugares emblemáticos</h2>
-      <ul>
-        <li>Iglesia colonial en el parque principal</li>
-        <li>Centro histórico y plaza mayor</li>
-        <li>Monumento a los héroes locales</li>
-      </ul>
+        <button class="carousel-btn prev" id="prev" aria-label="Anterior">❮</button>
+        <button class="carousel-btn next" id="next" aria-label="Siguiente">❯</button>
 
-      <h2>Naturaleza y ecoturismo</h2>
-      <p>
-        MUNICIPIO ofrece senderos ecológicos, cascadas, reservas forestales y miradores con vistas espectaculares.
-      </p>
-
-      <h2>Turismo cultural</h2>
-      <p>
-        Hay museos de historia local, exposiciones de arte campesino y talleres de artesanías en barro, lana y madera.
-      </p>
-
-      <h2>Servicios al visitante</h2>
-      <p>
-        El municipio cuenta con hospedajes rurales, restaurantes típicos, guías turísticos y acceso vial desde ciudades cercanas.
-      </p>
+        <div class="dots" id="dots" aria-hidden="false"></div>
+      </div>
     </section>
-  </main>
+
+    <!-- LUGARES EMblemáticos (con carrusel ya arriba) -->
+    <section class="card" id="lugares">
+      <div>
+        <h2>Lugares emblemáticos</h2>
+        <ul>
+          <li>Lago de Tota</li>
+          <li>Playa Blanca </li>
+          <li>Miradores Naturales</li>
+          <li>Iglesia de San Antonio de Aquitania</li>
+        </ul>
+      </div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Aquitania_boyaca.jpg" alt="Centro histórico de Aquitania">
+    </section>
+
+    <section class="card" id="naturaleza">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Playa_Blanca_Tota.jpg/960px-Playa_Blanca_Tota.jpg" alt="Playa Blanca - Lago de Tota">
+      <div>
+        <h2>Naturaleza y ecoturismo</h2>
+        <p>
+         Los senderos ecológicos de Aquitania, Boyacá ofrecen una experiencia única que combina naturaleza, agricultura y cultura local. Estos caminos atraviesan extensos cultivos de cebolla larga o junca, el producto insignia del municipio, permitiendo al visitante apreciar de cerca el proceso de siembra, cosecha y secado de este alimento que ha dado fama a la región. A medida que se avanza por los senderos, el paisaje se transforma en un mosaico de tonalidades verdes que contrastan con el azul profundo del Lago de Tota y el relieve montañoso circundante. Además de su valor paisajístico, estos recorridos fomentan el ecoturismo y la educación ambiental, ya que en el trayecto se pueden observar especies nativas de flora y fauna, interactuar con campesinos que comparten su conocimiento ancestral y reflexionar sobre la relación armónica entre el ser humano y el medio ambiente.
+
+        </p>
+      </div>
+    </section>
+
+    <section class="card" id="cultura">
+      <div>
+        <h2>Turismo cultural</h2>
+        <p>
+          Las ferias y el turismo cultural en Aquitania, Boyacá son una expresión viva de la identidad y las tradiciones del municipio, atrayendo tanto a visitantes nacionales como internacionales. Entre los eventos más destacados se encuentra la Feria Agropecuaria, Artesanal y Turística, donde se exhiben productos típicos como la cebolla junca, artesanías locales y gastronomía tradicional, acompañados de música carranguera, danzas folclóricas y muestras culturales. Estas celebraciones también incluyen desfiles, concursos y actividades religiosas en honor al patrono San Antonio de Padua, reflejando la profunda herencia católica de la comunidad. Durante estas fechas, Aquitania se convierte en un punto de encuentro para la promoción del turismo rural, el intercambio cultural y la preservación de costumbres que fortalecen el sentido de pertenencia y el orgullo local.
+        </p>
+      </div>
+      <img src="/img/aquitania-feria.png" alt="ferias de Aquitania">
+    </section>
+
+
 
   <footer>
-    <a href="../index.html">Regresar</a>
+    <p>
+      © 2025 Aquitania Web | Imágenes: Wikimedia Commons (licencias indicadas en sus archivos). 
+      <br>Créditos: Andrés Gómez G., Willton H. C., Nicolás O. V.
+    </p>
   </footer>
+
+
+  <script src="/scripts/burger.js"></script>
 </body>
 </html>
-
