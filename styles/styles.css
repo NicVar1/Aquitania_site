@@ -527,3 +527,22 @@ footer {
   gap: 1rem;
   justify-content: center;
 }
+
+
+/* ===== Historia ===== */
+.contenedor {
+  display: flex;
+  align-items: center; /* Centra verticalmente texto e imagen */
+  gap: 100px; /* Espacio entre texto e imagen */
+}
+
+.texto {
+  flex: 1;
+  text-align: center; /* Mantiene centrado el texto */
+}
+
+.imagen img {
+  max-width: 500px; /* Tamaño máximo de la imagen */
+  height: auto;
+  border-radius: 10px; /* Opcional, esquinas redondeadas */
+}
